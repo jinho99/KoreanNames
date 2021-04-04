@@ -9,12 +9,16 @@ import requests
 import time
 
 LASTNAME_MAX_PAGE = 20
+HOSTNAME = 'localhost'
+USER = 'root'
+PASSWORD = 'my-secret-pw'
+DBNAME = 'project'
 
 mydb = mysql.connector.connect(
-    host='localhost',
-    user='root',
-    password='my-secret-pw',
-    database='project'
+    host=HOSTNAME,
+    user=USER,
+    password=PASSWORD,
+    database=DBNAME
 )
 
 def register_students(num=500, delete_existings=False):

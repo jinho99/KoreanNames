@@ -22,3 +22,13 @@ Set number of names to generate. Default: 20000
 def run_main():
     register_students(num=20000, delete_existings=True)
 ```
+
+Run script
+```buildoutcfg
+python3 main.py
+```
+
+Check new names in db (workbench query)
+```
+SELECT * FROM student;
+```
